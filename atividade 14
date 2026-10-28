@@ -1,0 +1,78 @@
+1.	Criar uma matriz 2×2 com valores definidos no código e exibi-la em formato de tabela. 
+
+ 
+2.	#include <stdio.h>
+3.	
+4.	int main() {
+5.	    int matriz[2][2] = {
+6.	        {1, 2},
+7.	        {3, 4}
+8.	    };
+9.	
+10.	    printf("Matriz 2x2:\n");
+ 
+
+ 
+11.	
+12.	
+13.	    for (int i = 0; i < 2; i++) {
+14.	        for (int j = 0; j < 2; j++) {
+15.	            printf("%d\t", matriz[i][j]);
+16.	        }
+17.	        printf("\n");
+18.	    }
+19.	
+20.	    return 0;
+
+2-	Ler quatro valores digitados pelo usuário, armazená-los em uma matriz 2×2 e exibir a matriz. 
+
+#include <stdio.h>
+3-	
+4-	int main() {
+5-	    int matriz[2][2];
+6-	
+7-	    printf("Digite os valores da matriz:\n");
+8-	
+9-	    for (int i = 0; i < 2; i++) {
+10-	        for (int j = 0; j < 2; j++) {
+11-	            printf("Digite o valor [%d][%d]: ", i, j);
+12-	            scanf("%d", &matriz[i][j]);
+13-	        }
+14-	    }
+15-	
+16-	    printf("\nMatriz digitada:\n");
+17-	
+18-	    for (int i = 0; i < 2; i++) {
+19-	        for (int j = 0; j < 2; j++) {
+20-	            printf("%d\t", matriz[i][j]);
+21-	        }
+22-	        printf("\n");
+23-	    }
+24-	
+25-	    return 0;
+26-	}
+
+3- Criar uma matriz 3×3, somar todos os seus elementos e apresentar o resultado. 
+ 
+
+#include <stdio.h>
+
+int main() {
+    int matriz[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    int soma = 0;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            soma += matriz[i][j];
+        }
+    }
+
+    printf("A soma dos elementos da matriz e: %d\n", soma);
+
+    return 0;
+}
